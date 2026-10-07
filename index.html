@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal - Avícola de Mezquital</title>
+    <!-- Cargamos Tailwind CSS para los estilos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Colores personalizados basados en el logo */
+        .bg-brand-brown { background-color: #5d4a36; }
+        .bg-brand-orange { background-color: #f59e0b; }
+        .bg-brand-green { background-color: #728c69; }
+        .text-brand-brown { color: #5d4a36; }
+    </style>
+</head>
+<body class="bg-amber-50 min-h-screen flex flex-col font-sans text-gray-800">
+
+    <!-- Encabezado -->
+    <header class="bg-brand-brown text-white py-8 shadow-md text-center">
+        <div class="container mx-auto px-4">
+            <!-- Aquí está integrada la imagen LogoAvicola.jpg -->
+            <img src="LogoAvicola.jpg" alt="Logo Amanecer Avícola de Mezquital" 
+                 class="w-40 h-40 object-cover mx-auto mb-4 rounded-full border-4 border-white shadow-lg bg-white">
+            
+            <h1 class="text-3xl md:text-4xl font-bold tracking-wider uppercase mb-1">Avícola de Mezquital</h1>
+            <p class="text-amber-200 mt-2 text-lg font-light">Portal de Operaciones</p>
+        </div>
+    </header>
+
+    <!-- Contenido Principal (Menú) -->
+    <main class="flex-grow container mx-auto px-4 py-12 flex items-center justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
+            
+            <!-- Opción 1: Dar de alta clientes -->
+            <a href="https://raquel-espinosa.github.io/Registro-de-Clientes/" 
+               class="group flex flex-col items-center justify-center p-8 bg-white rounded-2xl shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl border-b-8 border-[#f59e0b]">
+                <div class="bg-orange-100 p-4 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <!-- Ícono de Usuario -->
+                    <svg class="w-12 h-12 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-brand-brown mb-2 text-center">Dar de Alta Clientes</h2>
+                <p class="text-gray-500 text-center">Registrar nuevos prospectos y clientes en el sistema</p>
+            </a>
+
+            <!-- Opción 2: Venta y entrega de producto -->
+            <a href="https://raquel-espinosa.github.io/AppVentas/" 
+               class="group flex flex-col items-center justify-center p-8 bg-white rounded-2xl shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl border-b-8 border-[#728c69]">
+                <div class="bg-green-100 p-4 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <!-- Ícono de Envío/Venta -->
+                    <svg class="w-12 h-12 text-[#728c69]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-brand-brown mb-2 text-center">Venta y Entrega</h2>
+                <p class="text-gray-500 text-center">Gestión de rutas, pedidos y control de entregas</p>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-brand-brown text-white py-6 text-center mt-auto border-t-4 border-[#728c69]">
+        <p class="text-sm text-amber-200">© 2026 Avícola de Mezquital. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
